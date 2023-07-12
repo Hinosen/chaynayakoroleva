@@ -1,0 +1,10 @@
+.wrapper{
+    height: 100vh;
+    background-image: url(../Images/Underconstruct.jpg);
+    background-size: 100% 100vh;
+}
+
+.header{
+    padding: 1%;
+    color: whitesmoke;
+}

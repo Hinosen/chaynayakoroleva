@@ -1,0 +1,95 @@
+body{   
+    font-family: Georgia;
+    background: linear-gradient(121deg, #b2a4b9 0%, #a2a1a4 100%), linear-gradient(121deg, #a2a1a4 0%, rgba(0, 255, 71, 0) 100%), linear-gradient(127deg, #8c7e76 0%, #28201d 100%), radial-gradient(107% 142% at 15% 104%, #F3D0FC 0%, #7d7777 100%), radial-gradient(100% 100% at 50% 0%, #989699 0%, #8c7e76 100%), radial-gradient(100% 100% at 50% 0%, #989699 0%, #8c7e76 100%), linear-gradient(127deg, #a6acbd 0%, #F8B043 100%);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
+}
+.logo-index{
+    margin: 2rem;
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    z-index: 10;
+    background:url(../Images/logo-clear.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.header__text{
+    padding: 5%;
+    font-size: 3rem;
+    color: #f8b043;
+}
+.shops{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #f8b043;
+    text-align: justify;
+}
+.shop-img{
+    margin-right: 5%;
+}
+.shipment{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #f8b043;
+}
+.shipment-img{
+    margin-right: 5%;
+}
+@media all and (max-width: 1000px){
+    .logo-index{
+        margin: 1rem;
+    }
+    .header{
+        padding-top: 10%;
+        height: auto;
+    }
+    .shops{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+    .shipment{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+}
+@media all and (max-width: 500px){
+    .logo-index{
+        width: 10%;
+    }
+    .header{
+        padding-top: 10%;
+    }
+    .header__text{
+        padding-top: 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .shops{
+        margin-left: 0;
+    }
+    .shipment{
+        margin-left: 0;
+    }
+    .shop-img{
+        margin-right: 0;
+    }
+    .shipment-img{
+        margin-right: 0;
+    }
+}

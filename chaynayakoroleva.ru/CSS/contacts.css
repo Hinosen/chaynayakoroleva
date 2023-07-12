@@ -1,0 +1,59 @@
+.logo-index{
+    margin: 2rem;
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    z-index: 10;
+    background:url(../Images/logo-clear.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(121deg, #b2a4b9 0%, #a2a1a4 100%), linear-gradient(121deg, #a2a1a4 0%, rgba(0, 255, 71, 0) 100%), linear-gradient(127deg, #8c7e76 0%, #28201d 100%), radial-gradient(107% 142% at 15% 104%, #F3D0FC 0%, #7d7777 100%), radial-gradient(100% 100% at 50% 0%, #989699 0%, #8c7e76 100%), radial-gradient(100% 100% at 50% 0%, #989699 0%, #8c7e76 100%), linear-gradient(127deg, #a6acbd 0%, #F8B043 100%);
+    background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
+    font-size: 3rem;
+    color: darkkhaki;
+    font-family: Georgia;
+}
+.contacts p{
+    margin-top: 3%;
+}
+.contacts a{
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a:hover{
+    text-shadow: 0.25rem 0.25rem turquoise;
+    transition-duration: 1s;
+}
+
+@media all and (max-width: 850px){
+   .contacts{
+       padding-top: 2%;
+       padding-left: 1%;
+       align-items: flex-start;
+       font-size: 1.75rem;
+   } 
+   .logo-index{
+    margin: 1rem;
+}
+}
+
+@media all and (max-width: 500px){
+    .contacts{
+        align-items: center;
+        font-size: 1.5rem;
+        }
+        .logo-index{
+            width: 10%;
+        }
+}
